@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="validation.js" ></script>
+    <title>Document</title>
+</head>
+<body  class=bg_image>
+    <div></div>
+    <form  action="datos.php" method="POST" class="formulario" onsubmit="return validate();">
+       
+      <h1 class="formulario__titulo">Termina tu pedido</h1> 
+        <input id ="nombre" name="nombre" type="text" class="formulario__input" >
+        <label for="" class="formulario__label">Nombre*</label>  
+        <input id ="telefono" name="telefono" type="number" class="formulario__input">
+        <label  for="" class="formulario__label">Teléfono*</label>  
+        <input id ="calles" name="calles" type="text" class="formulario__input">
+        <label for="" class="formulario__label">Calles*</label>  
+        <input id ="numero_puerta" name="numero_puerta" type="text" class="formulario__input">
+        <label for="" class="formulario__label">Numero de puerta</label>  
+        <!--<input id ="esquina" type="text" class="formulario__input">
+        <label for="" class="formulario__label">Esquina</label>  --> 
+        <input id ="ciudad" name="ciudad"type="text" class="formulario__input">
+        <label for="" class="formulario__label">Ciudad*</label>  
+        <!--<input id ="barrio" type="text" class="formulario__input">
+        <label for="" class="formulario__label">Barrio</label>-->
+        <input id ="submit" name="save" type="submit" class="formulario__submit"> 
+      
+    </form>
+    <script src="form.js"></script>
+
+
+    
+</body>
+</html>
